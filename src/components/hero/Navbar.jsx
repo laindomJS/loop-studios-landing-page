@@ -9,11 +9,11 @@ export const Navbar = () => {
       <Image src={logo} w="210px" />
 
       <HStack spacing="25px">
-        <Text as={motion.p} fontSize="16px" color="white">About</Text>
-        <Text as={motion.p} fontSize="16px" color="white">Careers</Text>
-        <Text as={motion.p} fontSize="16px" color="white">Events</Text>
-        <Text as={motion.p} fontSize="16px" color="white">Products</Text>
-        <Text as={motion.p} fontSize="16px" color="white">Support</Text>
+        <Text as={motion.p} fontSize="16px" color="white" whileHover={ {cursor:'pointer', borderBottom:'1px solid white'} }>About</Text>
+        <Text as={motion.p} fontSize="16px" color="white" whileHover={ {cursor:'pointer', borderBottom:'1px solid white'} }>Careers</Text>
+        <Text as={motion.p} fontSize="16px" color="white" whileHover={ {cursor:'pointer', borderBottom:'1px solid white'} }>Events</Text>
+        <Text as={motion.p} fontSize="16px" color="white" whileHover={ {cursor:'pointer', borderBottom:'1px solid white'} }>Products</Text>
+        <Text as={motion.p} fontSize="16px" color="white" whileHover={ {cursor:'pointer', borderBottom:'1px solid white'} }>Support</Text>
       </HStack>
 
     </Flex>
