@@ -2,7 +2,7 @@ import { Grid, GridItem, Image, Box, Text } from '@chakra-ui/react';
 
 export const GridSections = () => {
 
-  const srcs = [
+  const elements = [
     {
     id: 1,
     text: 'Deep earth',
@@ -48,11 +48,11 @@ export const GridSections = () => {
 
   return (
     <Grid templateColumns='repeat(4, 1fr)' gap="20px" as="section">
-      {srcs.map((src) => (
-        <GridItem key={src.id} as="article" w="fit-content" position="relative" _hover={ {color:'black', cursor:'pointer'} }>
-          <Image src={src.dir} />
+      {elements.map((element) => (
+        <GridItem key={element.id} as="article" w="fit-content" position="relative">
+          <Image src={element.dir} />
           <Box position="absolute" top="20rem" p="1rem" textAlign="left" fontSize="35px" fontFamily="heading" color="white" fontWeight="normal" textTransform="uppercase" letterSpacing="3px">
-            <Text>{src.text}</Text>
+            <Text>{element.text}</Text>
           </Box>
         </GridItem>
       ))}

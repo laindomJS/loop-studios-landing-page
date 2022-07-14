@@ -1,4 +1,4 @@
-import { Flex, Image, Button, Text, HStack } from '@chakra-ui/react';
+import { Flex, Image, Text, HStack } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 import logo from '../../assets/logo.svg';
